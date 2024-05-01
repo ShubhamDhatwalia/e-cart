@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-cart</title>
+    <link rel="stylesheet" href="style.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+
+
+</head>
+
+<body id="mainBody">
+
+<!--       ------------------------- Nav bar----------------------                -->
+
+    <div>
+
+        <nav class="navbar navbar-expand-lg  navbar-light fixed-top p-0 m-0 ">
+            
+            
+
+
+            
+            <div class="container-fluid justify-content-start">
+
+                <button type="button" class="navbar-toggler  py-1 px-2 me-5" data-bs-toggle="offcanvas"
+                    data-bs-target="#navCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <a href="#" class="navbar-brand "><span class="h2 ">E-cart</span></a>
+
+                <div class="offcanvas offcanvas-start offcanvas-nav" data-bs-scroll="true" data-bs-backdrop="false" id="navCollapse">
+
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                    </div>
+
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav ms-auto">
+
+                            <li class="nav-item ms-3 d-flex align-items-center ">
+                                
+                                <form action="" >
+                                    <div class="ps-4 bg-light rounded rounded-pill shadow-sm mb-0">
+                                      <div class="input-group">
+                                        <input type="search" placeholder="search here..." aria-describedby="button-addon1" class=" bg-light w-10">
+                                        <div class="input-group-append">
+                                          <button id="button-addon1" type="submit" class="btn btn-link text-warning rounded rounded-pill"><i class="fa fa-search"></i></button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </form>
+                            </li>
+                            
+                            <li class="nav-item  ms-3">
+                                    <span><a href="#" class="nav-link active"><span>Home</span></a></span>
+                            </li>
+                            
+                            <li class="nav-item  ms-3">
+                                <a href="#" class="nav-link">Categories</a>
+                            </li>
+                            <li class="nav-item  ms-3">
+                                <a href="#" class="nav-link">About</a>
+                            </li>
+                            <li class="nav-item me-2 ms-3">
+                                <a href="#" class="nav-link">Contact</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <ul class="navbar-nav navButton flex-row">
+
+                    <button type="button" class="btn btn-warning me-2 ">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <button type="button" class="btn btn-warning me-2 btn-cart" data-bs-toggle="offcanvas" data-bs-target="#nav-cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+
+                    
+
+                    <button type="button" class="btn btn-warning me-2">
+                        <i class="fa-solid fa-user"></i>
+                    </button>
+
+                </ul>
+            </div>
+
+            
+
+        </nav>
+        <div class="offcanvas offcanvas-end offcanvas-cart" data-bs-scroll="true" data-bs-backdrop="false" id="nav-cart">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title">My Cart</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+            
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, nesciunt quasi. Alias hic odit dignissimos architecto ipsa ratione quos, autem numquam non. Pariatur magnam earum suscipit totam ducimus. Recusandae, laboriosam?</p>
+                
+            </div>
+        </div>
+       
+    </div>
+
+    <!--         ----------------------Home banner ----------------------- -->
+
+    <div class="container-fluid p-0 home-container">
+
+        
+
+        <div class="row align-items-center m-0 py-4">
+            <div class="col-8 text-center">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <h3 class="mb-5">The New Way To Display Product by <br> <span class="logo">E-cart</span>
+                            </h3>
+                            <button type="button" class="btn btn-dark mb-4">Explore Now</button>
+                        </div>
+
+                        <div class="swiper-slide ">
+                            <h3 class="mb-5">We provides our customers the <span class="logo">best product with best
+                                    quality </span></h3>
+                            <button type="button" class="btn btn-dark mb-4">Shop Now</button>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="row">
+                                <div class="col-6">
+                                    <img src="./images/offer.png" alt="" width="300" class="img-fluid">
+                                </div>
+                                <div class="col-6 d-flex flex-wrap">
+
+                                </div>
+                            </div>
+
+
+                            <h3 class="comming-soon">Comming Soon with multiple offers</h3>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-4">
+                <img src="./images/1.png" alt="" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <!--        -------------------------features Container ----------------- -->
+
+    <div class="container">
+        <div class=" my-4 text-center features-row d-flex gap-4 flex-wrap align-items-center justify-content-center">
+            <div class="features">
+
+                <img src="./images/features/f1.png" alt="">
+                <span class="odd">Free Shipping</span>
+
+            </div>
+            <div class="features">
+                <img src="./images/features/f2.png" alt="">
+                <span class="even">Online Order</span>
+            </div>
+            <div class="features">
+                <img src="./images/features/f3.png" alt="">
+                <span class="odd">Save Money</span>
+            </div>
+            <div class="features">
+                <img src="./images/features/f4.png" alt="">
+                <span class="even">Promotions</span>
+            </div>
+            <div class="features">
+                <img src="./images/features/f5.png" alt="">
+                <span class="odd">Happy Sell</span>
+            </div>
+            <div class="features">
+                <img src="./images/features/f6.png" alt="">
+                <span class="even">24/7 support</span>
+            </div>
+        </div>
+    </div>
+
+    <!--     --------------------------Categories Container ---------------------- -->
+
+    <div class="container categories-container">
+        <h4 class="heading mb-4 "> Popular Categories</h4>
+        <div class="swiper mySwiper1 pt-5">
+            <div class=" swiper-wrapper">
+                <div class="swiper-slide ">
+                    <div class="card">
+                        <img src="./images/categories/category-1.jpg" alt="" class="img-fluid">
+                        <span>T-Shirts</span>
+                    </div>
+
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img src="./images/categories/category-2.jpg" alt="" class="img-fluid">
+                        <span>Bags</span>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img src="./images/categories/category-3.jpg" alt="" class="img-fluid">
+                        <span>Sandal</span>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img src="./images/categories/category-4.jpg" alt="" class="img-fluid">
+                        <span>Scarf Cap</span>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img src="./images/categories/category-5.jpg" alt="" class="img-fluid">
+                        <span>Shoes</span>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img src="./images/categories/category-6.jpg" alt="" class="img-fluid">
+                        <span>Pillowcase</span>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img src="./images/categories/category-7.jpg" alt="" class="img-fluid">
+                        <span>Jumpsuits</span>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img src="./images/categories/category-8.jpg" alt="" class="img-fluid">
+                        <span>Hats</span>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+        </div>
+    </div>
+    
+
+    <!-- -----------------------------Products Container -----------------------------  -->
+
+    <div class="container products-container">
+        <h3>Products</h3>
+
+        <div class="products d-flex gap-4 flex-wrap justify-content-center align-items-center my-3">
+            <div class="card">
+                <img src="./images/products/f1.jpg" alt="">
+                <div class="products-banner m-2">
+                    <p>adidas</p>
+                    <h5>Cartoon Astronaut T-Shirt</h5>
+                    <div class="price-tag d-flex justify-content-between align-items-center">
+                        <h5><i class="fa-solid fa-indian-rupee-sign"></i> <span>800</span></h5>
+                        <button type="button" class="btn "><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="./images/products/f2.jpg" alt="">
+                <div class="products-banner m-2">
+                    <p>adidas</p>
+                    <h5>Cartoon Astronaut T-Shirt</h5>
+                    <div class="price-tag d-flex justify-content-between align-items-center">
+                        <h5><i class="fa-solid fa-indian-rupee-sign"></i> <span>800</span></h5>
+                        <button type="button" class="btn"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="./images/products/f3.jpg" alt="">
+                <div class="products-banner m-2">
+                    <p>adidas</p>
+                    <h5>Cartoon Astronaut T-Shirt</h5>
+                    <div class="price-tag d-flex justify-content-between align-items-center">
+                        <h5><i class="fa-solid fa-indian-rupee-sign"></i> <span>800</span></h5>
+                        <button type="button" class="btn"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/products/f4.jpg" alt="">
+                <div class="products-banner m-2">
+                    <p>adidas</p>
+                    <h5>Cartoon Astronaut T-Shirt</h5>
+                    <div class="price-tag d-flex justify-content-between align-items-center">
+                        <h5><i class="fa-solid fa-indian-rupee-sign"></i> <span>800</span></h5>
+                        <button type="button" class="btn"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="card">
+                <img src="./images/products/f5.jpg" alt="">
+                <div class="products-banner m-2">
+                    <p>adidas</p>
+                    <h5>Cartoon Astronaut T-Shirt</h5>
+                    <div class="price-tag d-flex justify-content-between align-items-center">
+                        <h5><i class="fa-solid fa-indian-rupee-sign"></i> <span>800</span></h5>
+                        <button type="button" class="btn"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/products/f6.jpg" alt="">
+                <div class="products-banner m-2">
+                    <p>adidas</p>
+                    <h5>Cartoon Astronaut T-Shirt</h5>
+                    <div class="price-tag d-flex justify-content-between align-items-center">
+                        <h5><i class="fa-solid fa-indian-rupee-sign"></i> <span>800</span></h5>
+                        <button type="button" class="btn"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/products/f7.jpg" alt="">
+                <div class="products-banner m-2">
+                    <p>adidas</p>
+                    <h5>Cartoon Astronaut T-Shirt</h5>
+                    <div class="price-tag d-flex justify-content-between align-items-center">
+                        <h5><i class="fa-solid fa-indian-rupee-sign"></i> <span>800</span></h5>
+                        <button type="button" class="btn"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/products/f8.jpg" alt="">
+                <div class="products-banner m-2">
+                    <p>adidas</p>
+                    <h5>Cartoon Astronaut T-Shirt</h5>
+                    <div class="price-tag d-flex justify-content-between align-items-center">
+                        <h5><i class="fa-solid fa-indian-rupee-sign"></i> <span>800</span></h5>
+                        <button type="button" class="btn"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/products/n1.jpg" alt="">
+                <div class="products-banner m-2">
+                    <p>adidas</p>
+                    <h5>Cartoon Astronaut T-Shirt</h5>
+                    <div class="price-tag d-flex justify-content-between align-items-center">
+                        <h5><i class="fa-solid fa-indian-rupee-sign"></i> <span>800</span></h5>
+                        <button type="button" class="btn"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/products/n2.jpg" alt="">
+                <div class="products-banner m-2">
+                    <p>adidas</p>
+                    <h5>Cartoon Astronaut T-Shirt</h5>
+                    <div class="price-tag d-flex justify-content-between align-items-center">
+                        <h5><i class="fa-solid fa-indian-rupee-sign"></i> <span>800</span></h5>
+                        <button type="button" class="btn"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/products/n3.jpg" alt="">
+                <div class="products-banner m-2">
+                    <p>adidas</p>
+                    <h5>Cartoon Astronaut T-Shirt</h5>
+                    <div class="price-tag d-flex justify-content-between align-items-center">
+                        <h5><i class="fa-solid fa-indian-rupee-sign"></i> <span>800</span></h5>
+                        <button type="button" class="btn"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/products/n4.jpg" alt="">
+                <div class="products-banner m-2">
+                    <p>adidas</p>
+                    <h5>Cartoon Astronaut T-Shirt</h5>
+                    <div class="price-tag d-flex justify-content-between align-items-center">
+                        <h5><i class="fa-solid fa-indian-rupee-sign"></i> <span>800</span></h5>
+                        <button type="button" class="btn"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/products/n5.jpg" alt="">
+                <div class="products-banner m-2">
+                    <p>adidas</p>
+                    <h5>Cartoon Astronaut T-Shirt</h5>
+                    <div class="price-tag d-flex justify-content-between align-items-center">
+                        <h5><i class="fa-solid fa-indian-rupee-sign"></i> <span>800</span></h5>
+                        <button type="button" class="btn"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/products/n5.jpg" alt="">
+                <div class="products-banner m-2">
+                    <p>adidas</p>
+                    <h5>Cartoon Astronaut T-Shirt</h5>
+                    <div class="price-tag d-flex justify-content-between align-items-center">
+                        <h5><i class="fa-solid fa-indian-rupee-sign"></i> <span>800</span></h5>
+                        <button type="button" class="btn"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/products/n7.jpg" alt="">
+                <div class="products-banner m-2">
+                    <p>adidas</p>
+                    <h5>Cartoon Astronaut T-Shirt</h5>
+                    <div class="price-tag d-flex justify-content-between align-items-center">
+                        <h5><i class="fa-solid fa-indian-rupee-sign"></i> <span>800</span></h5>
+                        <button type="button" class="btn"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="script.js"></script>
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>

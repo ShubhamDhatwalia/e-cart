@@ -1,0 +1,260 @@
+.navbar{
+    box-shadow: 0 15px 15px white;
+    background-color: rgb(186, 255, 232) !important;
+    
+}
+
+nav a{
+    font-size: large !important;
+    color: black !important;
+    font-weight: 500 !important;
+    transition: 0.4s ease;
+
+}
+
+
+.nav-link:hover,
+.nav-link.active{
+    color: orange !important;
+    
+}
+.navbar li{
+    position: relative;
+}
+.nav-link.active::after,
+.nav-link:hover::after{
+    content: "";
+    width: 80%;
+    height: 3px;
+    background-color: orange;
+    position: absolute;
+    bottom: 2px;
+    left: 10%;
+}
+.navbar-brand .h2{
+    color: orange;
+}
+
+
+.home-container{
+    margin-top: 62px !important;
+    background-color: rgb(228, 231, 219);
+    width: 100%;
+    
+}
+
+.navButton button{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border: 2px solid rgba(255, 166, 0, 0.164);
+}
+.navButton button:hover{
+    border: 2px solid black;
+}
+
+.navbar-nav li input{
+    
+    border: none;
+    width: 120px;
+}
+
+form input:focus{
+    outline: none;
+}
+
+form  button:hover{
+    background-color: rgb(208, 208, 255) !important;
+}
+.offcanvas-nav{
+    height: 55% !important;
+    width: auto !important;
+    top: 62px !important;
+    /* box-shadow: 0px 5px 15px gray;
+    border-radius: 3px;
+     */
+}
+
+.offcanvas-cart{
+    width:30% !important;
+}
+.logo{
+    color: orange;
+}
+.carousel .carousel-indicators{
+    bottom: -50px;
+}
+.carousel-inner{
+    overflow: visible !important;
+}
+.swiper-slide h3{
+    font-size: 40px;
+    font-weight: 500;
+    font-family:cursive;
+}
+.swiper-slide span{
+    font-style: italic;
+    font-weight: 800;
+}
+.swiper-slide img{
+    margin-top: 0px;
+    margin-right: 400px !important;
+}
+.swiper-slide .comming-soon{
+    margin-top: 35px;
+    color: orange;
+}
+.swiper-slide .comming-soon{
+    font-size: 40px;
+    font-weight: 900;
+}
+.swiper-slide button{
+    font-size: x-large;
+    font-weight: 600;
+}
+.swiper-slide button:hover{
+    background-color: orange;
+    color: black;
+    border-color: orange;
+}
+
+.features-row .features{
+    border: 1px solid rgb(141, 139, 139);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0 5px 10px;
+}
+.features-row .features span{
+    background-color: rgb(252, 252, 136);
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.features-row .features .odd{
+    background-color: antiquewhite;
+}
+
+.mySwiper1{
+    width: 95%;
+}
+.mySwiper1 .swiper-slide {
+  
+    width: 200px;
+    
+} 
+
+.mySwiper1 .card{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+     
+}
+.mySwiper1 .swiper-slide span{
+    font-size: large;
+    font-weight: 600;
+    
+}
+.mySwiper1 .swiper-wrapper{
+    display: flex;
+    gap: 30px;
+    width: 100%;
+}
+
+.mySwiper1 .swiper-slide img{
+    width: 250px;
+    border-radius: 8px;
+    
+}
+.swiper-button-next{
+    position: absolute;
+    top: 18px !important;
+    font-size: smaller ;
+}
+.swiper-button-prev{
+    top: 18px !important;
+    
+}
+
+.swiper-button-prev {
+    right: 50px !important;
+    left: auto !important;
+}
+
+.categories-container{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.navbar .container-fluid{
+    justify-content: space-between !important;
+    gap: 20px;
+}
+
+.navbar-brand{
+    position: absolute;
+    left: 80px !important;
+}
+
+.products .card{
+    width: 200px;
+}
+.products .products-banner h5{
+    font-size: 15px;
+}
+
+.products .products-banner p{
+    font-size: smaller;
+    color: gray;
+}
+.products .products-banner .price-tag h5,button{
+    font-size: 20px !important;
+    color: orange;
+}
+.products-container .price-tag button:hover{
+    color: green;
+}
+@media  screen and (min-width: 270px) and (max-width: 600px) {
+    .mySwiper .swiper-slide h3{
+        font-size: 20px;
+        margin-bottom: 5px !important;
+    } 
+
+    .mySwiper .swiper-slide button{
+        font-size: small;
+      
+    }
+    .navButton button{
+        font-size: small;
+        padding-left: 3px;
+        padding-right: 3px;
+        padding-top: 1px;
+        padding-bottom: 1px;
+    }
+    .navbar .navbar-toggler{
+        padding: 2px !important;
+        font-size: 18px;
+    }
+    .home-container{
+        margin-top: 52px !important;
+        
+    }
+}
+
+@media screen and (min-width:270px) and (max-width: 400px){
+    .row .col-4 {
+        width: 0px;
+    }
+    
+}
+
+@media screen and (min-width:1700px) and (max-width: 3284px) {
+    .row .col-4 img{
+        width: 300px;
+    }
+}
+
+
+
