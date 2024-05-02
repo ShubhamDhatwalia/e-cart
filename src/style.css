@@ -75,7 +75,7 @@ form  button:hover{
 }
 
 .offcanvas-cart{
-    width:30% !important;
+    width: auto !important;
 }
 .logo{
     color: orange;
@@ -216,6 +216,13 @@ form  button:hover{
 .products-container .price-tag button:hover{
     color: green;
 }
+
+
+table tbody td{
+   vertical-align: middle !important;
+   text-align: left;
+}
+
 @media  screen and (min-width: 270px) and (max-width: 600px) {
     .mySwiper .swiper-slide h3{
         font-size: 20px;
