@@ -212,16 +212,26 @@ form  button:hover{
 .products .products-banner .price-tag h5,button{
     font-size: 20px !important;
     color: orange;
+    margin-bottom: 0px;
 }
 .products-container .price-tag button:hover{
-    color: green;
+    color: lightgreen;
 }
 
 
 table tbody td{
    vertical-align: middle !important;
    text-align: left;
+   font-size: 20px !important;
+   font-weight: 500 !important;
+   color: gray !important;
 }
+
+table tbody td .btn:hover .fa-trash {
+    color: red !important;
+    transition: 0.2s ease;
+}
+
 
 @media  screen and (min-width: 270px) and (max-width: 600px) {
     .mySwiper .swiper-slide h3{
@@ -254,6 +264,9 @@ table tbody td{
     .row .col-4 {
         width: 0px;
     }
+    table tbody td{
+        font-size: 15px !important;
+    }
     
 }
 
@@ -265,3 +278,26 @@ table tbody td{
 
 
 
+.quantity-buttons{
+
+    font-size: 25px !important;
+    font-weight: 500;
+    align-items: center;
+}
+.quantity-buttons button{
+    font-size: 25px !important;
+    font-weight: 500 !important;
+}
+
+
+
+.total h5 {
+    display: flex;
+    justify-content: end !important;
+    font-size: 15px;
+    margin-bottom: 10px; 
+}
+
+.total h5 div {
+    margin-right: 10px; /* Add margin between label and value */
+}
