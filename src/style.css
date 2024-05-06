@@ -76,6 +76,7 @@ form  button:hover{
 
 .offcanvas-cart{
     width: auto !important;
+    top: 62px !important;
 }
 .logo{
     color: orange;
@@ -233,7 +234,7 @@ table tbody td .btn:hover .fa-trash {
 }
 
 
-@media  screen and (min-width: 270px) and (max-width: 600px) {
+@media  screen and (min-width: 270px) and (max-width: 650px) {
     .mySwiper .swiper-slide h3{
         font-size: 20px;
         margin-bottom: 5px !important;
@@ -257,6 +258,12 @@ table tbody td .btn:hover .fa-trash {
     .home-container{
         margin-top: 52px !important;
         
+    }
+    .offcanvas-nav{
+        top: 52px !important;
+    }
+    .offcanvas-cart{
+        top: 52px !important;
     }
 }
 

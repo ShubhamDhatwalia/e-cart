@@ -294,3 +294,4 @@ function clearCart() {
     // Recalculate subtotal and total
     calculateSubtotalAndTotal();
 }
+
